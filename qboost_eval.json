@@ -1,0 +1,47 @@
+{
+  "model_names": [
+    "logreg",
+    "decisionstump",
+    "knn",
+    "gaussiannb",
+    "bagging",
+    "randomforest"
+  ],
+  "weight_key": "normalized_weights",
+  "weights": {
+    "logreg": 0.625,
+    "decisionstump": 0.125,
+    "knn": 0.0,
+    "gaussiannb": 0.0,
+    "bagging": 0.0,
+    "randomforest": 0.25
+  },
+  "selected_threshold": 0.9045641157001049,
+  "tune_best_f1_during_search": 0.8571428571428571,
+  "metrics": {
+    "tune": {
+      "pr_auc": 0.8491859594922158,
+      "recall": 0.75,
+      "precision": 1.0,
+      "f1": 0.8571428571428571,
+      "threshold": 0.9045641157001049,
+      "positive_rate_pred": 0.0012640449438202246
+    },
+    "test": {
+      "pr_auc": 0.8450195046671828,
+      "recall": 0.76,
+      "precision": 0.8260869565217391,
+      "f1": 0.7916666666666667,
+      "threshold": 0.9045641157001049,
+      "positive_rate_pred": 0.00161505512253353
+    }
+  },
+  "timing_sec": {
+    "qubo_training": 3.6132963999989443,
+    "ensemble_inference_avg_tune": 0.00011356000002706424,
+    "ensemble_inference_avg_test": 0.00011190949997399003,
+    "base_model_inference_tune": 0.9362015000078827,
+    "base_model_inference_test": 1.0326847999822348,
+    "total_pipeline_inference_test": 1.0327967094822088
+  }
+}

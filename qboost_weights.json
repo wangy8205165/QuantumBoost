@@ -1,0 +1,63 @@
+{
+  "model_names": [
+    "logreg",
+    "decisionstump",
+    "knn",
+    "gaussiannb",
+    "bagging",
+    "randomforest"
+  ],
+  "r_bits": 4,
+  "bit_values": [
+    1.0,
+    0.5,
+    0.25,
+    0.125
+  ],
+  "bitstring": "010100010000000000000010",
+  "solver": {
+    "name": "custom_simulated_annealing",
+    "num_reads": 128,
+    "num_sweeps": 400,
+    "temp_start": 3.0,
+    "temp_end": 0.001,
+    "seed": 42
+  },
+  "objective_setup": {
+    "lambda_reg": 0.001,
+    "simplex_penalty": 10.0,
+    "neg_weight": 1.0,
+    "pos_weight": 580.2448979591836
+  },
+  "training_time_sec": 3.6132963999989443,
+  "best_energy": -10.865164672008447,
+  "raw_weights": {
+    "logreg": 0.625,
+    "decisionstump": 0.125,
+    "knn": 0.0,
+    "gaussiannb": 0.0,
+    "bagging": 0.0,
+    "randomforest": 0.25
+  },
+  "normalized_weights": {
+    "logreg": 0.625,
+    "decisionstump": 0.125,
+    "knn": 0.0,
+    "gaussiannb": 0.0,
+    "bagging": 0.0,
+    "randomforest": 0.25
+  },
+  "sum_raw_weights": 1.0,
+  "train_objective_raw": {
+    "weighted_mse": 0.13264613278246448,
+    "l2_penalty": 0.00046875,
+    "simplex_penalty": 0.0,
+    "total": 0.13311488278246447
+  },
+  "train_objective_normalized": {
+    "weighted_mse": 0.13264613278246448,
+    "l2_penalty": 0.00046875,
+    "simplex_penalty": 0.0,
+    "total": 0.13311488278246447
+  }
+}

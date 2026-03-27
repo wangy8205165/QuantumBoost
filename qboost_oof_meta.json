@@ -1,0 +1,97 @@
+{
+  "data_path": "creditcard.csv",
+  "model_dir": "E:\\CMU\\Research\\QuantumBoost",
+  "models": [
+    {
+      "name": "logreg",
+      "path": "E:\\CMU\\Research\\QuantumBoost\\logreg_model.joblib"
+    },
+    {
+      "name": "decisionstump",
+      "path": "E:\\CMU\\Research\\QuantumBoost\\decisionstump_model.joblib"
+    },
+    {
+      "name": "knn",
+      "path": "E:\\CMU\\Research\\QuantumBoost\\knn_model.joblib"
+    },
+    {
+      "name": "gaussiannb",
+      "path": "E:\\CMU\\Research\\QuantumBoost\\gaussiannb_model.joblib"
+    },
+    {
+      "name": "bagging",
+      "path": "E:\\CMU\\Research\\QuantumBoost\\bagging_model.joblib"
+    },
+    {
+      "name": "randomforest",
+      "path": "E:\\CMU\\Research\\QuantumBoost\\randomforest_model.joblib"
+    }
+  ],
+  "loaded_model_names": [
+    "logreg",
+    "decisionstump",
+    "knn",
+    "gaussiannb",
+    "bagging",
+    "randomforest"
+  ],
+  "load_failures": [],
+  "split_strategy": {
+    "reconstructed_base_holdout_size": 0.2,
+    "meta_train_frac_of_holdout": 0.5,
+    "tune_frac_of_remaining": 0.5,
+    "random_state": 42
+  },
+  "splits": {
+    "meta_train": {
+      "size": 28481,
+      "positive_count": 49,
+      "positive_rate": 0.0017204452090867595
+    },
+    "tune": {
+      "size": 14240,
+      "positive_count": 24,
+      "positive_rate": 0.0016853932584269663
+    },
+    "test": {
+      "size": 14241,
+      "positive_count": 25,
+      "positive_rate": 0.0017554946984060108
+    }
+  },
+  "inference_times_sec": {
+    "meta_train": {
+      "per_model": {
+        "logreg": 0.005470299976877868,
+        "decisionstump": 0.004593299992848188,
+        "knn": 1.6285365999792702,
+        "gaussiannb": 0.02512919995933771,
+        "bagging": 1.1492279000231065,
+        "randomforest": 0.05112859996734187
+      },
+      "total": 2.8640858998987824
+    },
+    "tune": {
+      "per_model": {
+        "logreg": 0.003623399999924004,
+        "decisionstump": 0.003041400050278753,
+        "knn": 0.7970287000061944,
+        "gaussiannb": 0.009281900012865663,
+        "bagging": 0.08564949996070936,
+        "randomforest": 0.03757659997791052
+      },
+      "total": 0.9362015000078827
+    },
+    "test": {
+      "per_model": {
+        "logreg": 0.0030322999809868634,
+        "decisionstump": 0.0026423000381328166,
+        "knn": 0.7948817999567837,
+        "gaussiannb": 0.009340699994936585,
+        "bagging": 0.18396560003748164,
+        "randomforest": 0.03882209997391328
+      },
+      "total": 1.0326847999822348
+    }
+  }
+}
